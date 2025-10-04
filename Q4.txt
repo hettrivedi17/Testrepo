@@ -1,0 +1,31 @@
+package labass;
+import java.util.*;
+
+class DemoExp{
+    String sid;
+    String sname;
+    int sage;
+    public DemoExp(String sid, String sname, int sage){
+        this.sid = sid;
+        this.sname = sname;
+        this.sage = sage;
+    }
+    @Override
+    public String toString(){
+        return "Student id : " + sid + "\n" + "Student name : " + sname + "\n" + "Student age : " + sage; 
+    }
+}
+
+public class Que3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter student id : ");
+        String sid = sc.next();
+        System.out.println("Enter student name : ");
+        String sname = sc.next();
+        System.out.println("Enter student age : ");
+        int sage = sc.nextInt();
+        DemoExp ob = new DemoExp(sid,sname,sage);
+        System.out.println(ob);
+    }       
+}
